@@ -11,7 +11,7 @@ jobs:
       uses: Yikun/hub-mirror-action@master
       with:
         src: github/21ki
-        dst: gitee/21k
+        dst: gitee/myki
         dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
         dst_token:  ${{ secrets.GITEE_TOKEN }}
         clone_style: "ssh"
