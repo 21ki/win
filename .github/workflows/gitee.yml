@@ -16,6 +16,6 @@ jobs:
         dst_token:  ${{ secrets.GITEE_TOKEN }}
         clone_style: "ssh"
         white_list: "win"
-        #static_list: 'win'
+        static_list: 'win'
         force_update: true
         debug: true
