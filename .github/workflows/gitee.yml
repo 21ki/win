@@ -1,5 +1,5 @@
 on: push
-name: Tests / test-user-mirror
+name: sync / gitee
 jobs:
   run:
     name: Run
@@ -15,6 +15,7 @@ jobs:
         dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
         dst_token:  ${{ secrets.GITEE_TOKEN }}
         clone_style: "ssh"
-        static_list: 'win'
+        white_list: "win"
+        #static_list: 'win'
         force_update: true
         debug: true
