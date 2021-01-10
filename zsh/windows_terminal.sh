@@ -42,6 +42,7 @@ https://www.yuque.com/hellochen/notes/nixzke?language=zh-cn
 #配置路径%localappdata%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\profiles.json
 
 vi C:\Users\Administrator\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
+        {
             // Git Bash
             "commandline" : "D:\\Program Files\\Git\\bin\\bash.exe --login -i",
             "guid" : "{9c1ab057-0fcb-414f-bed0-d055321a1bbf}",
@@ -55,7 +56,17 @@ vi C:\Users\Administrator\AppData\Local\Packages\Microsoft.WindowsTerminal_8weky
             "colorScheme": "One Half Dark",
             "backgroundImage" : "E:\\壁纸\\dm.jpg",
             "backgroundImageOpacity" : 0.3,
-            "backgroundImageStretchMode" : "fill"
+            "backgroundImageStretchMode" : "fill",
+			"tabTitle" : "Git Bash",
+			"foreground" : "#DCDCDC",
+				"closeOnExit" : true,
+				"cursorColor" : "#FFFFFF",
+				"cursorShape" : "bar",
+				"fontSize" : 11,
+				"historySize" : 9001,
+				"padding" : "0, 0, 0, 0",
+				"snapOnInput" : true,
+				"startingDirectory" : "%USERPROFILE%"
         },
         {
             // Ubuntu
