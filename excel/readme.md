@@ -45,3 +45,9 @@ IF(K2<=0,0,IF(K2<=3,0.22,(K2-1)*0.11))
 
 #excel调用另一个excel
 ='C:\Users\Administrator.USER-20141126VR\Desktop\新建文件夹 (2)\[2.xlsx]Sheet1'!B40
+
+#文字和数字在一起时无法正确排列（都需要创建辅助列，然后把辅助列隐藏即可）
+方式1
+=INT(MID(A1,5,LEN(A1)-5))
+方式2
+=LEFT(A2,1)&TEXT(RIGHT(A2,LEN(A2)-1),"000")

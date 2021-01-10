@@ -1,0 +1,21 @@
+on: push
+name: sync / gitee
+jobs:
+  run:
+    name: Run
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout source codes
+      uses: actions/checkout@v1
+    - name: Mirror Github to Gitee with white list
+      uses: Yikun/hub-mirror-action@master
+      with:
+        src: github/21ki
+        dst: gitee/myki
+        dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+        dst_token:  ${{ secrets.GITEE_TOKEN }}
+        clone_style: "ssh"
+        white_list: "win,linux"
+        static_list: 'win,linux'
+        force_update: true
+        debug: true
