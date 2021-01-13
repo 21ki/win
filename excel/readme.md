@@ -51,3 +51,7 @@ IF(K2<=0,0,IF(K2<=3,0.22,(K2-1)*0.11))
 =INT(MID(A1,5,LEN(A1)-5))
 方式2
 =LEFT(A2,1)&TEXT(RIGHT(A2,LEN(A2)-1),"000")
+
+
+#月份+1   https://alisonyip.viekee.com/?p=342
+=DATE(YEAR(A3),MONTH(A3)+1,DAY(A3))
