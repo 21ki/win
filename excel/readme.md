@@ -55,3 +55,8 @@ IF(K2<=0,0,IF(K2<=3,0.22,(K2-1)*0.11))
 
 #月份+1   https://alisonyip.viekee.com/?p=342
 =DATE(YEAR(A3),MONTH(A3)+1,DAY(A3))
+
+
+#两个表格对比合并需要的数据
+=VLOOKUP(D1,A:B,2,0)
+https://zhidao.baidu.com/question/1832517278422476700.html
