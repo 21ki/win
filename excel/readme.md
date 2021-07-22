@@ -60,3 +60,13 @@ IF(K2<=0,0,IF(K2<=3,0.22,(K2-1)*0.11))
 #两个表格对比合并需要的数据
 =VLOOKUP(D1,A:B,2,0)
 https://zhidao.baidu.com/question/1832517278422476700.html
+
+
+# 计算两列中重复下标  见 wyf吉客云订单导入总表2021.7.21_v2.xls
+=COUNTIFS(C$1:C2,C2,$A$1:$A2,$A2)
+# 判断如果下标1,则运算后面公式
+=IF(COUNTIFS(C$1:C3,C3,$A$1:$A3,$A3)=1,"需要删除得列","")
+# 累加如果重复得列对应列之后
+SUMIF(A:A,A2,AN:AN)
+# 判断如果两列中重复下标1,则累加如果重复得列对应列之后
+=IF(COUNTIFS(AA$1:AA2,AA2,$A$1:$A2,$A2)=1,SUMIF(A:A,A2,AN:AN),"")
