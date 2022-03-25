@@ -70,3 +70,17 @@ https://zhidao.baidu.com/question/1832517278422476700.html
 SUMIF(A:A,A2,AN:AN)
 # 判断如果两列中重复下标1,则累加如果重复得列对应列之后
 =IF(COUNTIFS(AA$1:AA2,AA2,$A$1:$A2,$A2)=1,SUMIF(A:A,A2,AN:AN),"")
+
+# 筛选求和
+=SUBTOTAL(109,F:F)
+
+# 引用另一个表格
+# 1.直接引用
+='D:\桌面\src\[天津恒大翡翠华庭欠费期间至12.31日缴费明细(1).xlsx]1'!A1
+# 2.HYPERLINK函数
+=HYPERLINK('D:\桌面\src\[天津恒大翡翠华庭欠费期间至12.31日缴费明细(1).xlsx]1'!A1)
+# 3.LOOKUP函数
+=LOOKUP('D:\桌面\src\[天津恒大翡翠华庭欠费期间至12.31日缴费明细(1).xlsx]1'!A1,'D:\桌面\src\[天津恒大翡翠华庭欠费期间至12.31日缴费明细(1).xlsx]1'!A1)
+# 4.VLOOKUP函数
+=VLOOKUP(A1,'[天津恒大名都项目缴费明细至12.31缴费明细.xlsx]1'!$A$1,2,0)
+# 5.引用整个数据表
