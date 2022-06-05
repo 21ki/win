@@ -6,4 +6,8 @@ netstat -aon|findstr "7890"
 tasklist|findstr "1376"
 # 查找进程所在的目录
 wmic process get name,executablepath,processid|findstr 1376
+# 终止进程
+taskkill /pid 8656 -f
+# 进程gui
+Process Explorer
 ```
