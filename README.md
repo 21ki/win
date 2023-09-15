@@ -1,6 +1,12 @@
  ## 官方网站：https://v0v.bid 
  ## https://github.com/netnr/kms
 
+```shell
+slmgr -skms skms.netnr.eu.org
+slmgr -ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
+slmgr -ato
+```
+
 ---
 
 ---

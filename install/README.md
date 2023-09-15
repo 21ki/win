@@ -16,4 +16,6 @@ exit
 ```shell
 # 要点击“现在安装” 按 Shift+F10 呼出命令提示符输入以下命令添加注册表键值。
 REG ADD HKLM\SYSTEM\Setup\LabConfig /v BypassTPMCheck /t REG_DWORD /d 1
+# windows11 安装一直卡在让我们为你连接到网络怎么办？
+oobe\bypassnro
 ```
