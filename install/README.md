@@ -9,8 +9,9 @@ format fs=ntfs quick
 exit
 exit
 
-
 # [win11跳过TPM](https://www.dinghui.org/vmware-esxi-windows-11.html)
+
+# [win优化](https://make-sense.tech/blog)
 
 ```shell
 # 要点击“现在安装” 按 Shift+F10 呼出命令提示符输入以下命令添加注册表键值。
