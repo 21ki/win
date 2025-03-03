@@ -2,6 +2,10 @@
  ## https://github.com/netnr/kms
 
 ```shell
+# 20250303更新 https://massgrave.dev/
+irm https://get.activated.win | iex
+
+
 slmgr -skms skms.netnr.eu.org
 slmgr -ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
 slmgr -ato
